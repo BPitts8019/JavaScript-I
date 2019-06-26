@@ -15,23 +15,75 @@ const example = {
   "name": "Example",
   "email": "examples@you.edu",
   "gender": "F"
-}
+};
 
 // Write your intern objects here:
+console.log('\n\n==== Challenge 1: Writing Objects ====');
+// 1,mmelloy0@psu.edu,Mitzi,F
+const mitzi = {
+   id: 1,
+   name: "Mitzi",
+   email: "mmelloy0@psu.edu",
+   gender: "F"
+};
+
+// 2,kdiben1@tinypic.com,Kennan,M
+const kennan = {
+   id: 2,
+   name: "Kennan",
+   email: "kdiben1@tinypic.com",
+   gender: "M"
+};
+
+// 3,kmummery2@wikimedia.org,Keven,M
+const keven = {
+   id: 3,
+   name: "Keven",
+   email: "kmummery2@wikimedia.org",
+   gender: "M"
+};
+
+// 4,gmartinson3@illinois.edu,Gannie,M
+const gannie = {
+   id: 4,
+   name: "Gannie",
+   email: "gmartinson3@illinois.edu",
+   gender: "M"
+};
+
+// 5,adaine5@samsung.com,Antonietta,F
+const antonietta = {
+   id: 5,
+   name: "Antonietta",
+   email: "adaine5@samsung.com",
+   gender: "F"
+};
+
+console.log(mitzi);
+console.log(kennan);
+console.log(keven);
+console.log(gannie);
+console.log(antonietta);
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
+console.log(`\n\n==== Challenge 2: Reading Object Data ==== `);
 // Mitzi's name
+console.log(`Mitzi's name: ${mitzi.name}`);
 
 // Kennan's ID
+console.log(`Kennan's ID: ${kennan.id}`);
 
 // Keven's email
+console.log(`Keven's email: ${keven.email}`);
 
 // Gannie's name
+console.log(`Gannie's name: ${gannie.name}`);
 
 // Antonietta's Gender
+console.log(`Antonietta's gender: ${antonietta.gender}`);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
