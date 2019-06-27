@@ -115,21 +115,21 @@ const parent = {
    name: "Susan",
    age: 70,
    speak: function () {
-      return `Hello, my name is ${this.name}!`;
+      console.log(`Hello, my name is ${this.name}!`);
    },
 
    child: {
       name: "George",
       age: 50,
       speak: function () {
-         return `Hello, my name is ${this.name}!`;
+         console.log(`Hello, my name is ${this.name}!`);
       },
 
       grandChild: {
          name: "Sam",
          age: 30,
          speak: function () {
-            return `Hello, my name is ${this.name}!`;
+            console.log(`Hello, my name is ${this.name}!`);
          }
       }
    }
@@ -143,8 +143,8 @@ console.log(`Child's Name: ${parent.child.name}`);
 console.log(`Grandchild's Name: ${parent.child.grandChild.name}`);
 
 // Have the parent speak
-console.log(`Parent Speak: ${parent.speak()}`);
+parent.speak();
 // Have the child speak
-console.log(`Child speak: ${parent.child.speak()}`);
+parent.child.speak();
 // Have the grandchild speak
-console.log(`Grandchild speak: ${parent.child.grandChild.speak()}`);
+parent.child.grandChild.speak();
